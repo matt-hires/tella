@@ -1,4 +1,14 @@
 /* assets */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+
+@source "./**/*.html";
+@source "./**/*.md";
+@source "./config.toml";
+
+@theme {
+  --color-tlgray-200: #E5E7EB;
+  --color-tlgray-400: #9CA3AF;
+  --color-tlgray-700: #374151;
+  --color-tlgray-800: #1F2937;
+}
